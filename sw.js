@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lager-meldung-823-v2';
+const CACHE_NAME = 'lager-meldung-823-v3';
 const PRECACHE = [
   './',
   './index.html',
@@ -24,6 +24,9 @@ const PRECACHE = [
   './js/massScan.js',
   './vendor/xlsx.full.min.js',
   './vendor/jspdf.umd.min.js',
+  './vendor/barcode-detector-polyfill.js',
+  './vendor/barcode-detector-setup.js',
+  './vendor/zxing_reader.wasm',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-512-maskable.png',
