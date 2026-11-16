@@ -2,10 +2,10 @@ import { downloadBlob, openMailto } from './share.js';
 import { buildVerschrottungPdf } from './pdf.js';
 import { formatDate } from './format.js';
 
-const LAGERPLATZ_RECIPIENT = 'oberhausen@wego-vti.de';
+const LAGERPLATZ_RECIPIENT = 'vtioberhausen@wego-vti.de';
 const VERSCHROTTUNG_RECIPIENT = 'christian.feld@wego-vti.de,Magdalen.Jeblonski@wego-vti.de';
-const LAGERPLATZKORREKTUR_RECIPIENT = 'oberhausen@wego-vti.de';
-const FEHLBESTAND_RECIPIENT = 'oberhausen@wego-vti.de';
+const LAGERPLATZKORREKTUR_RECIPIENT = 'vtioberhausen@wego-vti.de';
+const FEHLBESTAND_RECIPIENT = 'vtioberhausen@wego-vti.de';
 
 // Google-Apps-Script-Webhook (siehe apps-script/Code.gs), der den Anhang automatisch per
 // GmailApp verschickt – analog zur bestehenden WeGo-VTI-Unfallaufnahme-App. Leer lassen,

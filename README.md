@@ -14,7 +14,7 @@ Tablet installiert ist.
 
 - **Lagerplatzänderung melden** – Artikelnummer, Art (**Hauptlagerplatz** oder **Referenzlagerplatz**,
   Pflichtauswahl), neuer Lagerplatz, Bemerkung. Wird beim Absenden sofort als Excel-Datei an
-  `oberhausen@wego-vti.de` gemailt.
+  `vtioberhausen@wego-vti.de` gemailt.
 - **Verschrottung melden** – Artikelnummer, Menge, Grund, mindestens 1 Pflichtfoto (bis zu 4 Fotos), Bemerkung. Wird beim Absenden
   sofort als PDF (mit allen Fotos eingebettet) an `christian.feld@wego-vti.de` und
   `Magdalen.Jeblonski@wego-vti.de` gemailt.
@@ -22,7 +22,7 @@ Tablet installiert ist.
   laut System (`data/artikel-lagerplatz.xlsx`) prüfen und ggf. korrigieren. Damit lässt sich **nur der
   Hauptlagerplatz** ändern (fester SAP-Massenupload); Referenzlagerplätze müssen einzeln über
   „Lagerplatzänderung melden“ erfasst werden – die Seite weist deutlich darauf hin. Mehrere Korrekturen
-  werden auf der Seite gesammelt und gemeinsam als eine Excel-Datei an `oberhausen@wego-vti.de` gesendet –
+  werden auf der Seite gesammelt und gemeinsam als eine Excel-Datei an `vtioberhausen@wego-vti.de` gesendet –
   im festen SAP-Massenupload-Format `MATNR` (Artikelnummer), `WERKS`/`LGORT` (fest „823“), `LGPBE` (neuer
   Hauptlagerplatz), ohne weitere Spalten.
 - **Lagerplatz-Erfassung (Kamera)** – Massenerfassung pro Lagerplatz: Lagerplatz wählen, dann die Kamera über die
@@ -43,7 +43,7 @@ Tablet installiert ist.
   gespeichert und beim nächsten Öffnen fortgesetzt. Artikel, die in einer Runde auf mehreren Plätzen
   erfasst wurden, kommen nicht in die SAP-Datei, sondern werden in der Mail zum Klären aufgeführt.
 - **Fehlbestand melden** – nur Artikelnummer (+ optionale Bemerkung), ohne Lagerplatz oder Menge. Wird
-  beim Absenden sofort als einfache Text-Mail (kein Anhang) an `oberhausen@wego-vti.de` gemailt.
+  beim Absenden sofort als einfache Text-Mail (kein Anhang) an `vtioberhausen@wego-vti.de` gemailt.
 - Lagerplatzänderung, Verschrottung und Fehlbestand werden einzeln und sofort versendet, kein
   Sammel-Export nötig
 - Nach Auswahl einer Artikelnummer (auch in Lagerplatzänderung, Verschrottung und Fehlbestand, nicht
@@ -105,10 +105,10 @@ hinterlegt (`js/export.js`):
 
 | Meldungstyp | Empfänger | Format |
 |---|---|---|
-| Lagerplatzänderung | `oberhausen@wego-vti.de` | Excel (1 Zeile) |
+| Lagerplatzänderung | `vtioberhausen@wego-vti.de` | Excel (1 Zeile) |
 | Verschrottung | `christian.feld@wego-vti.de`, `Magdalen.Jeblonski@wego-vti.de` | PDF mit bis zu 4 eingebetteten Fotos (`js/pdf.js`) |
-| Massen-Lagerplatzkorrektur | `oberhausen@wego-vti.de` | Excel im SAP-Format `MATNR`/`WERKS`/`LGORT`/`LGPBE` (1 Zeile je Korrektur, gesammelt) |
-| Fehlbestand | `oberhausen@wego-vti.de` | Kein Anhang – reine Text-Mail |
+| Massen-Lagerplatzkorrektur | `vtioberhausen@wego-vti.de` | Excel im SAP-Format `MATNR`/`WERKS`/`LGORT`/`LGPBE` (1 Zeile je Korrektur, gesammelt) |
+| Fehlbestand | `vtioberhausen@wego-vti.de` | Kein Anhang – reine Text-Mail |
 
 Solange `MAIL_SCRIPT_URL` leer ist, fällt die App automatisch auf Download + vorausgefüllten
 E-Mail-Entwurf zurück (Anhang muss dann manuell hinzugefügt werden). Details zur Einrichtung/zu einem
@@ -118,7 +118,7 @@ eigenen Script stehen im README von [Lager-Artikelapp](https://github.com/Markus
 **Bekanntes Risiko:** Bei der Unfallaufnahme-App (Vorbild für dieses Skript) wurden E-Mails vom
 Gmail-Absender an manche `@wego-vti.de`-Adressen per SPF abgelehnt. Bei `muenster@wego-vti.de` und
 `Martin.Jochheim@wego-vti.de` (Standort 106) funktioniert es nachweislich; ob das auch für
-`oberhausen@wego-vti.de`, `christian.feld@wego-vti.de` und `Magdalen.Jeblonski@wego-vti.de` gilt, ist nach
+`vtioberhausen@wego-vti.de`, `christian.feld@wego-vti.de` und `Magdalen.Jeblonski@wego-vti.de` gilt, ist nach
 dem ersten echten Versand noch zu bestätigen. Falls Mails nicht ankommen, muss die IT den Gmail-Absender
 für die jeweilige Adresse freischalten.
 

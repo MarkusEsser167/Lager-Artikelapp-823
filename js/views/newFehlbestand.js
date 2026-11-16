@@ -10,7 +10,7 @@ export async function renderNewFehlbestand(container, router) {
   header.className = 'view-header';
   header.innerHTML = `
     <h1>Fehlbestand melden</h1>
-    <p class="view-subtitle">Artikel per Mail an oberhausen@wego-vti.de melden, ohne Lagerplatz oder Menge.</p>
+    <p class="view-subtitle">Artikel per Mail an vtioberhausen@wego-vti.de melden, ohne Lagerplatz oder Menge.</p>
   `;
   const backBtn = document.createElement('button');
   backBtn.className = 'btn-back';
