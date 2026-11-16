@@ -16,7 +16,8 @@ Tablet installiert ist.
   Pflichtauswahl), neuer Lagerplatz, Bemerkung. Wird beim Absenden sofort als Excel-Datei an
   `oberhausen@wego-vti.de` gemailt.
 - **Verschrottung melden** – Artikelnummer, Menge, Grund, mindestens 1 Pflichtfoto (bis zu 4 Fotos), Bemerkung. Wird beim Absenden
-  sofort als PDF (mit allen Fotos eingebettet) an `oberhausen@wego-vti.de` gemailt.
+  sofort als PDF (mit allen Fotos eingebettet) an `christian.feld@wego-vti.de` und
+  `Magdalen.Jeblonski@wego-vti.de` gemailt.
 - **Massen-Lagerplatzkorrektur** – zur Inventurvorbereitung: Artikel scannen, aktuellen Hauptlagerplatz
   laut System (`data/artikel-lagerplatz.xlsx`) prüfen und ggf. korrigieren. Damit lässt sich **nur der
   Hauptlagerplatz** ändern (fester SAP-Massenupload); Referenzlagerplätze müssen einzeln über
@@ -105,7 +106,7 @@ hinterlegt (`js/export.js`):
 | Meldungstyp | Empfänger | Format |
 |---|---|---|
 | Lagerplatzänderung | `oberhausen@wego-vti.de` | Excel (1 Zeile) |
-| Verschrottung | `oberhausen@wego-vti.de` | PDF mit bis zu 4 eingebetteten Fotos (`js/pdf.js`) |
+| Verschrottung | `christian.feld@wego-vti.de`, `Magdalen.Jeblonski@wego-vti.de` | PDF mit bis zu 4 eingebetteten Fotos (`js/pdf.js`) |
 | Massen-Lagerplatzkorrektur | `oberhausen@wego-vti.de` | Excel im SAP-Format `MATNR`/`WERKS`/`LGORT`/`LGPBE` (1 Zeile je Korrektur, gesammelt) |
 | Fehlbestand | `oberhausen@wego-vti.de` | Kein Anhang – reine Text-Mail |
 
@@ -117,7 +118,7 @@ eigenen Script stehen im README von [Lager-Artikelapp](https://github.com/Markus
 **Bekanntes Risiko:** Bei der Unfallaufnahme-App (Vorbild für dieses Skript) wurden E-Mails vom
 Gmail-Absender an manche `@wego-vti.de`-Adressen per SPF abgelehnt. Bei `muenster@wego-vti.de` und
 `Martin.Jochheim@wego-vti.de` (Standort 106) funktioniert es nachweislich; ob das auch für
-`oberhausen@wego-vti.de` gilt, ist nach
+`oberhausen@wego-vti.de`, `christian.feld@wego-vti.de` und `Magdalen.Jeblonski@wego-vti.de` gilt, ist nach
 dem ersten echten Versand noch zu bestätigen. Falls Mails nicht ankommen, muss die IT den Gmail-Absender
 für die jeweilige Adresse freischalten.
 

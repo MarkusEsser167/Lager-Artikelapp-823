@@ -3,7 +3,7 @@ import { buildVerschrottungPdf } from './pdf.js';
 import { formatDate } from './format.js';
 
 const LAGERPLATZ_RECIPIENT = 'oberhausen@wego-vti.de';
-const VERSCHROTTUNG_RECIPIENT = 'oberhausen@wego-vti.de';
+const VERSCHROTTUNG_RECIPIENT = 'christian.feld@wego-vti.de,Magdalen.Jeblonski@wego-vti.de';
 const LAGERPLATZKORREKTUR_RECIPIENT = 'oberhausen@wego-vti.de';
 const FEHLBESTAND_RECIPIENT = 'oberhausen@wego-vti.de';
 
